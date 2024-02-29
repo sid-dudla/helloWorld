@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+
+    <!-- Allows implementation of css in this html file -->
+    <link href = "/Static/css/style.css" rel ="stylesheet">
+
+    <style>
+        p.blue {
+            color: #0000ff;
+        }
+
+        /* Makes font size three times larger */
+        .biggertext {
+            font-size:3em;
+        }
+
+        .change {
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        /* Creates a purple border for the table */
+        table, td, th {
+            border-style: solid;
+            border-width: 3px;
+            border-color: #990090;
+            border-collapse: collapse;
+        }
+
+        #stylize {
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        p, td {
+            color: #990000;
+        }
+
+        logo.img {
+            width: 500px;
+            height: 72px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Website header -->
+    <h1>About Me</h1>
+
+    <p class="blue">I am a student at <strong>College Park</strong>. I am currently a <strong> senior,</strong>  I will soon be looking for jobs.</p>
+    <p class="biggertext">After college, I plan on pursuing a career in <em> data science. </em> I will do this by completing projects in <em>python</em>.</p>
+    <p id="stylize">I have a natural interest towards problem solving and cracking riddles. I hope data science will feel similar to solving a new riddle everyday.</p>
+
+    <!-- Unordered and ordered lists are below  -->
+
+    <h2 class = "change">My Interests</h2>
+    <ul>
+        <li>Data Science</li>
+        <li>Data Analytics</li>
+        <li>Machine Learning</li>
+
+    </ul>
+
+    <ol>
+        <li>Deep Learning</li>
+        <li>Generative AI</li>
+        <li>Python Programming</li>
+    </ol>
+
+    <h2 class = "change">Previous Coursework</h2>
+    <table>
+        <tr>
+            <th>Course</th>
+            <th>Semester Taken</th>
+        </tr>
+
+        <tr>
+            <td>BMGT 404</td>
+            <td>Spring 2024</td>
+        </tr>
+
+        <tr>
+            <td>BMGT 407</td>
+            <td>Spring 2024</td>
+        </tr>
+
+        <tr>
+            <td>BMGT 403</td>
+            <td>Fall 2023</td>
+        </tr>
+
+    </table>
+
+    <p>A link to my <a href="/hello"> hello route</a></p>
+
+    <!-- Link to favorite websites -->
+    <p>A link to <a href="https://www.tesla.com/" target="_blank"> Tesla</a> </p>
+
+    <p>A link to <a href="https://www.polestar.com/us/"> Polestar</a></p>
+
+    <img class = "logo" src="https://terpconnect.umd.edu/~jbono/bmgt407/images/smith-logo.png" alt="Smith Logo">
+
+</body>
+</html>
