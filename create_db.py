@@ -23,8 +23,9 @@ with app.app_context():
             'password': generate_password_hash('managerpw', method='pbkdf2:sha256'), 'role': 'MANAGER'},
         {'username': 'admin', 'email': 'admin@umd.edu', 'first_name': 'Crystal', 'last_name': 'Ball',
             'password': generate_password_hash('adminpw', method='pbkdf2:sha256'), 'role': 'ADMIN'},
+        # Added a new user with role student and hashed password using my own elms credentials
         {'username': 'sdudla', 'email': 'sdudla@terpmail.umd.edu', 'first_name': 'Siddharth', 'last_name': 'Dudla',
-         'password': generate_password_hash('sdudla', method='pbkdf2:sha256'), 'role': 'ADMIN'}
+         'password': generate_password_hash('sdudla', method='pbkdf2:sha256'), 'role': 'STUDENT'}
     ]
 
     for each_user in users:
